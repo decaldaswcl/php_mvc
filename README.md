@@ -59,6 +59,10 @@ composer install
 
 This simple exemple MVC structure.
 
+Features
+
+-Basic MVC
+
 ```
 simple
 ├── app
@@ -73,9 +77,47 @@ simple
 ├── resorces
 │   └── views
 │       └── pages
-│           ├── footer.php
-│           ├── header.php
-│           ├── home.php
-│           └── page.php
+│           ├── footer.html
+│           ├── header.html
+│           ├── home.html
+│           └── page.html
+└── index.php
+```
+## Multpages
+This exemple of basic MVC structure for multiple pages
+
+Features
+
+-Basic MVC
+-Basic Routes manager
+
+```
+Multipages
+├── app
+│   ├── Controller
+│   │   └── Pages
+│   │       ├── Home.php
+│   │       ├── Pages.php
+│   │       └── Pricing.php
+│   ├── Http
+│   │   ├──Request.php
+│   │   ├──Response.php
+│   │   └──Router.php
+│   ├── Models
+│   │   └── Entity
+│   └── Views
+│       └── View.php
+├── resorces
+│   └── views
+│       └── pages
+│           ├── about.html
+│           ├── contact.html
+│           ├── footer.html
+│           ├── header.html
+│           ├── home.html
+│           ├── page.html
+│           └── princing.html
+├── routes
+│   └── pages.php
 └── index.php
 ```
