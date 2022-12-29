@@ -6,5 +6,5 @@ RewriteEngine  on
 #If the file does not exist rewrite for index
 RewriteCond %{REQUEST_FILENAME} !-f
 
-#
+#Rules
 RewriteRule ^(.*)$ ./index.php [QSA,NC]
