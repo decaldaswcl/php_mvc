@@ -1,3 +1,6 @@
 simple/vendor
 simple/composer.json
 simple/composer.lock
+multipages/vendor
+multipages/composer.json
+multipages/composer.lock
