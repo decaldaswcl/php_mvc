@@ -1,0 +1,10 @@
+#Apache configuration file used to enable or disable features   
+
+#enable URL rewrite 
+RewriteEngine  on
+
+#If the file does not exist rewrite for index
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#
+RewriteRule ^(.*)$ ./index.php [QSA,NC]
